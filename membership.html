@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - Student Organization</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="forums.html">Forums</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Membership Section -->
+    <section class="membership">
+        <h1>Membership</h1>
+        <p>Join our student organization to enjoy a wide range of benefits and opportunities to enhance your university experience.</p>
+        
+        <h2>Membership Types</h2>
+        <ul>
+            <li><strong>Basic Membership:</strong> Access to all events and resources, participation in forums, and monthly newsletter.</li>
+            <li><strong>Premium Membership:</strong> All Basic Membership benefits plus exclusive workshops, priority event registration, and special discounts.</li>
+        </ul>
+
+        <h2>Benefits</h2>
+        <ul>
+            <li>Networking opportunities with peers and professionals</li>
+            <li>Access to exclusive events and workshops</li>
+            <li>Monthly newsletters with the latest news and updates</li>
+            <li>Discounts on events and resources</li>
+            <li>Opportunities to develop leadership and organizational skills</li>
+        </ul>
+
+        <h2>Application Form</h2>
+        <form id="membership-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="membership-type">Membership Type:</label>
+            <select id="membership-type" name="membership-type" required>
+                <option value="basic">Basic Membership</option>
+                <option value="premium">Premium Membership</option>
+            </select>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <button type="submit">Apply Now</button>
+        </form>
+
+        <h2>Testimonials</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"Joining this organization has been the best decision of my university life. The events and workshops are top-notch!" - <strong>Kareena Bhusal</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"I have learned so much and met so many great people through this organization. Highly recommend!" - <strong>Avinash Kumar Chaudhary</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Student Organization. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

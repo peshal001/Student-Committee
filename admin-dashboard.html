@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/user_create.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script defer src="restricted.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-align: right;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        .container h2 {
+            font-size: 24px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .container p {
+            line-height: 1.6;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group select {
+            width: calc(100% - 10px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+        .form-group button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .form-group button:hover {
+            background-color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body data-allowed-roles="admin">
+    <nav>
+        <ul>
+            <li><a href="index.html" class="animate__animated animate__fadeIn">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container animate__animated animate__fadeIn">
+        <h2>Admin Dashboard</h2>
+        <p>Welcome to the admin dashboard. Manage users and site content here.</p>
+
+        <!-- User Creation Section -->
+        <section id="user-creation">
+            <h2>Create User</h2>
+            <form action="/create_user" method="post">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="role">Role:</label>
+                    <select id="role" name="role">
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Create User</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Content Management Section -->
+        <section id="content-management">
+            <h2>Content Management</h2>
+            <p>Manage website content, including blogs, events, and resources.</p>
+            <ul>
+                <li><a href="#">Manage Blogs</a></li>
+                <li><a href="#">Manage Events</a></li>
+                <li><a href="#">Manage Resources</a></li>
+            </ul>
+        </section>
+
+        <!-- Analytics Section -->
+        <section id="analytics">
+            <h2>Analytics</h2>
+            <p>View website analytics and user engagement metrics.</p>
+            <ul>
+                <li><a href="#">Traffic Overview</a></li>
+                <li><a href="#">User Demographics</a></li>
+                <li><a href="#">Conversion Rates</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Student Organization. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+</body>
+</html>

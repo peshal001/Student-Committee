@@ -1,0 +1,44 @@
+/* User Creation Section */
+#user-creation {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#user-creation h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#user-creation form {
+    display: flex;
+    flex-direction: column;
+}
+
+#user-creation label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#user-creation input[type="text"],
+#user-creation select {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#user-creation button {
+    background-color: #0074d9;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#user-creation button:hover {
+    background-color: #005bbf;
+}

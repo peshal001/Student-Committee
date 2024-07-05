@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Organization Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Top Header Section -->
+    <div class="header-top">
+        <nav>
+            <div class="left">
+                <span class="date" id="current-date"></span>
+            </div>
+            <div class="right">
+                <a href="mailto:info@studentorganization.com">info@studentorganization.com</a>
+                <a href="tel:+123456789">+123456789</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="forums.html">Forums</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li class="login-dropdown">
+                <a href="#"><i class="fas fa-user"></i> Login</a>
+                <div class="dropdown-content">
+                    <a href="login-student.html">Student Login</a>
+                    <a href="login-teacher.html">Teacher Login</a>
+                    <a href="login-admin.html">Admin Login</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Welcome to Our Student Organization</h1>
+        <p>Join us for events, resources, and community support.</p>
+    </header>
+
+    <!-- News and Events Carousel -->
+    <section class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="images/sample1.jpg" alt="Event 1">
+                <div class="carousel-caption">Upcoming Event: Workshop on Web Development</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/sample2.jpg" alt="Event 2">
+                <div class="carousel-caption">Latest News: Our Organization Wins Award</div>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/sample3.jpeg" alt="Event 3">
+                <div class="carousel-caption">Highlight: Annual Sports Meet</div>
+            </div>
+        </div>
+        <button class="carousel-prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carousel-next" onclick="moveSlide(1)">&#10095;</button>
+    </section>
+
+    <!-- Our Services Section -->
+    <section class="our-services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-items">
+                <div class="service-item">
+                    <h3>Event Management</h3>
+                    <p>We organize a variety of events throughout the year, catering to different interests and skills.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Resource Center</h3>
+                    <p>Access our library of resources including books, articles, and study materials.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Community Support</h3>
+                    <p>Join a supportive community that encourages personal growth and development.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Networking</h3>
+                    <p>Connect with peers, mentors, and industry professionals to expand your network.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News, Notices & Gallery -->
+    <section class="news-notice-gallery" id="Latest-News">
+        <div class="container">
+            <div class="news">
+                <h2>Latest News</h2>
+                <div class="news-items">
+                    <div class="news-item">
+                        <h3>New Funding Initiative</h3>
+                        <p>Explore our new funding initiative to support student projects and innovations.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                    <div class="news-item">
+                        <h3>Summer Internship Program</h3>
+                        <p>Applications now open for our summer internship program. Apply today!</p>
+                        <a href="#">Apply Now</a>
+                    </div>
+                    <div class="news-item">
+                        <h3>Student Achievement Awards</h3>
+                        <p>Celebrating outstanding student achievements in academics and extracurricular activities.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="news-item">
+                        <h3>Upcoming Webinar Series</h3>
+                        <p>Join our upcoming webinar series on career readiness and personal development.</p>
+                        <a href="#">Register Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notice-board">
+                <h2>Notice Board</h2>
+                <div class="notice-items">
+                    <div class="notice-item">
+                        <h3>Annual General Meeting</h3>
+                        <p>Date: July 15, 2024</p>
+                        <p>Join us for our annual general meeting to discuss key organization updates and future plans.</p>
+                        <button onclick="registerEvent('Annual General Meeting')">Attend Now</button>
+                    </div>
+                    <div class="notice-item">
+                        <h3>Cultural Festival</h3>
+                        <p>Date: August 20, 2024</p>
+                        <p>Celebrate diverse cultures with music, dance, food, and art. Everyone is welcome!</p>
+                        <button onclick="registerEvent('Cultural Festival')">Register</button>
+                    </div>
+                    <div class="notice-item">
+                        <h3>Call for Volunteers</h3>
+                        <p>Date: Ongoing</p>
+                        <p>We are looking for volunteers to help organize upcoming events. Join us in making a difference!</p>
+                        <button onclick="registerEvent('Call for Volunteers')">Volunteer Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-images">
+                <div class="gallery-image">
+                    <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 1">
+                </div>
+                <div class="gallery-image">
+                    <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 2">
+                </div>
+                <div class="gallery-image">
+                    <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 3">
+                </div>
+                <div class="gallery-image">
+                    <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 4">
+                </div>
+                <div class="gallery-image">
+                    <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 5">
+                </div>
+                <div class="gallery-image">
+                    <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 6">
+                </div>
+            </div>
+            <div class="view-all-images">
+                <a href="gallery.html" class="view-all-button">View All Images</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <img src="images/logo.png" alt="Logo" class="footer-logo">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>About Us</h3>
+                    <p>Our student organization aims to bring together like-minded individuals who are passionate about learning, growing, and making a difference. We offer a range of activities, resources, and events designed to help you achieve your goals.</p>
+                    <div class="footer-social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#Latest-News">News</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@studentorganization.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Maitedevi, Kathmandu</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Student Organization. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot Container -->
+    <div id="chatbot" class="chatbot">
+        <div id="chatbot-header" class="chatbot-header">
+            Chatbot
+            <button id="close-chatbot" class="close-button">&times;</button>
+        </div>
+        <div id="chatbot-body" class="chatbot-body">
+            <div id="chatbot-messages" class="chatbot-messages"></div>
+        </div>
+        <div id="chatbot-footer" class="chatbot-footer">
+            <input type="text" id="chatbot-input" class="chatbot-input" placeholder="Type your message...">
+            <button id="chatbot-send" class="chatbot-send">Send</button>
+        </div>
+    </div>
+
+    <!-- Chatbot Toggle Button -->
+    <button id="chatbot-toggle" class="chatbot-toggle">
+        <img src="images/chat-icon.png" alt="Chat Icon" class="chatbot-icon">
+        <span>Chat with us</span>
+    </button>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/chatbot.js"></script>
+    <script>
+        function registerEvent(eventName) {
+            alert(`You have registered for the ${eventName}`);
+        }
+    </script>
+</body>
+
+</html>

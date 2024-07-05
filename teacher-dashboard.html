@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Custom CSS for Teacher Dashboard -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-align: right;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        .container h2 {
+            font-size: 24px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .container p {
+            line-height: 1.6;
+        }
+        .teacher-content {
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            margin-top: 20px;
+            animation: fadeInUp 0.5s ease;
+        }
+        .teacher-content h3 {
+            margin-bottom: 10px;
+        }
+        .teacher-content ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .teacher-content li {
+            margin-bottom: 10px;
+        }
+        .teacher-content p {
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        /* Animation keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body data-allowed-roles="teacher">
+    <nav>
+        <ul>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container animate__animated animate__fadeIn">
+        <h2>Teacher Dashboard</h2>
+        <p>Welcome to the teacher dashboard. Here you can manage educational resources, courses, and student interactions.</p>
+
+        <!-- Teacher Resources Section -->
+        <section class="teacher-content">
+            <h3>Teacher Resources</h3>
+            <ul>
+                <li><strong>Course Materials:</strong> Access course syllabi, lecture notes, and assignments.</li>
+                <li><strong>Student Progress:</strong> Monitor student grades, attendance, and academic performance.</li>
+                <li><strong>Professional Development:</strong> Explore opportunities for workshops, conferences, and seminars.</li>
+                <li><strong>Faculty Meetings:</strong> Schedule and view upcoming departmental meetings and discussions.</li>
+            </ul>
+            <p>Use the navigation menu to explore different sections of the teacher dashboard.</p>
+        </section>
+
+        <!-- Events and Meetings -->
+        <section class="teacher-content">
+            <h3>Upcoming Events and Meetings</h3>
+            <ul>
+                <li><strong>Departmental Meeting:</strong> Date: July 10, 2024. Discuss curriculum updates and academic policies.</li>
+                <li><strong>Professional Development Workshop:</strong> Date: August 15, 2024. Enhance teaching skills and strategies.</li>
+            </ul>
+            <p>Stay informed about important events and professional opportunities.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Student Organization. All rights reserved.</p>
+    </footer>
+
+    <!-- Include Animate.css for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+</body>
+</html>

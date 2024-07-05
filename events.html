@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Student Organization</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="scripts/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="forums.html">Forums</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Events Section -->
+    <section class="events">
+        <h1>Upcoming Events</h1>
+        <div class="event">
+            <h2>Web Development Workshop</h2>
+            <p>Date: June 15, 2024</p>
+            <p>Join us for a comprehensive workshop on web development. Learn HTML, CSS, and JavaScript from experienced instructors.</p>
+            <button onclick="registerEvent('Web Development Workshop')">Register</button>
+        </div>
+        <div class="event">
+            <h2>Annual Sports Meet</h2>
+            <p>Date: July 10, 2024</p>
+            <p>Participate in our annual sports meet. Events include football, basketball, swimming, and more. Open to all members.</p>
+            <button onclick="registerEvent('Annual Sports Meet')">Register</button>
+        </div>
+        <div class="event">
+            <h2>Cultural Festival</h2>
+            <p>Date: August 20, 2024</p>
+            <p>Celebrate diverse cultures with music, dance, food, and art. Everyone is welcome!</p>
+            <button onclick="registerEvent('Cultural Festival')">Register</button>
+        </div>
+    </section>
+
+    <!-- Past Events Highlights -->
+    <section class="past-events">
+        <h1>Past Events</h1>
+        <div class="event">
+            <h2>AI & Machine Learning Seminar</h2>
+            <p>Date: May 5, 2024</p>
+            <p>A successful seminar where experts discussed the latest trends in AI and machine learning.</p>
+        </div>
+        <div class="event">
+            <h2>Community Service Day</h2>
+            <p>Date: April 22, 2024</p>
+            <p>Members participated in various community service activities, making a positive impact in the local area.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Student Organization. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function registerEvent(eventName) {
+            alert(`You have registered for the ${eventName}`);
+        }
+    </script>
+</body>
+</html>
