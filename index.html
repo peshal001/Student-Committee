@@ -99,90 +99,91 @@
         </div>
     </section>
 
-    <!-- News, Notices & Gallery -->
-    <section class="news-notice-gallery" id="Latest-News">
-        <div class="container">
-            <div class="news">
-                <h2>Latest News</h2>
-                <div class="news-items">
-                    <div class="news-item">
-                        <h3>New Funding Initiative</h3>
-                        <p>Explore our new funding initiative to support student projects and innovations.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                    <div class="news-item">
-                        <h3>Summer Internship Program</h3>
-                        <p>Applications now open for our summer internship program. Apply today!</p>
-                        <a href="#">Apply Now</a>
-                    </div>
-                    <div class="news-item">
-                        <h3>Student Achievement Awards</h3>
-                        <p>Celebrating outstanding student achievements in academics and extracurricular activities.</p>
-                        <a href="#">Learn More</a>
-                    </div>
-                    <div class="news-item">
-                        <h3>Upcoming Webinar Series</h3>
-                        <p>Join our upcoming webinar series on career readiness and personal development.</p>
-                        <a href="#">Register Now</a>
-                    </div>
+ <!-- News, Notices & Gallery -->
+ <section class="news-notice-gallery" id="Latest-News">
+    <div class="container">
+        <div class="news">
+            <h2>Latest News</h2>
+            <div class="news-items">
+                <div class="news-item">
+                    <h3>New Funding Initiative</h3>
+                    <p>Explore our new funding initiative to support student projects and innovations.</p>
+                    <button class="btn" onclick="showModal('modalFunding')">Apply Now</button>
                 </div>
-            </div>
-
-            <div class="notice-board">
-                <h2>Notice Board</h2>
-                <div class="notice-items">
-                    <div class="notice-item">
-                        <h3>Annual General Meeting</h3>
-                        <p>Date: July 15, 2024</p>
-                        <p>Join us for our annual general meeting to discuss key organization updates and future plans.</p>
-                        <button onclick="registerEvent('Annual General Meeting')">Attend Now</button>
-                    </div>
-                    <div class="notice-item">
-                        <h3>Cultural Festival</h3>
-                        <p>Date: August 20, 2024</p>
-                        <p>Celebrate diverse cultures with music, dance, food, and art. Everyone is welcome!</p>
-                        <button onclick="registerEvent('Cultural Festival')">Register</button>
-                    </div>
-                    <div class="notice-item">
-                        <h3>Call for Volunteers</h3>
-                        <p>Date: Ongoing</p>
-                        <p>We are looking for volunteers to help organize upcoming events. Join us in making a difference!</p>
-                        <button onclick="registerEvent('Call for Volunteers')">Volunteer Now</button>
-                    </div>
+                <div class="news-item">
+                    <h3>Summer Internship Program</h3>
+                    <p>Applications now open for our summer internship program. Apply today!</p>
+                    <button class="btn" onclick="showModal('modalInternship')">Apply Now</button>
+                </div>
+                <div class="news-item">
+                    <h3>Student Achievement Awards</h3>
+                    <p>Celebrating outstanding student achievements in academics and extracurricular activities.</p>
+                    <button class="btn" onclick="showModal('modalAchievement')">Learn More</button>
+                </div>
+                <div class="news-item">
+                    <h3>Upcoming Webinar Series</h3>
+                    <p>Join our upcoming webinar series on career readiness and personal development.</p>
+                    <button class="btn" onclick="showModal('modalWebinar')">Register Now</button>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Gallery Section -->
-    <section class="gallery">
-        <div class="container">
-            <h2>Gallery</h2>
-            <div class="gallery-images">
-                <div class="gallery-image">
-                    <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 1">
+        <div class="notice-board">
+            <h2>Notice Board</h2>
+            <div class="notice-items">
+                <div class="notice-item">
+                    <h3>Annual General Meeting</h3>
+                    <p>Date: July 15, 2024</p>
+                    <p>Join us for our annual general meeting to discuss key organization updates and future plans.</p>
+                    <button class="btn" onclick="showModal('modalMeeting')">Attend Now</button>
                 </div>
-                <div class="gallery-image">
-                    <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 2">
+                <div class="notice-item">
+                    <h3>Cultural Festival</h3>
+                    <p>Date: August 20, 2024</p>
+                    <p>Celebrate diverse cultures with music, dance, food, and art. Everyone is welcome!</p>
+                    <button class="btn" onclick="showModal('modalFestival')">Register</button>
                 </div>
-                <div class="gallery-image">
-                    <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 3">
+                <div class="notice-item">
+                    <h3>Call for Volunteers</h3>
+                    <p>Date: Ongoing</p>
+                    <p>We are looking for volunteers to help organize upcoming events. Join us in making a difference!</p>
+                    <button class="btn" onclick="showModal('modalVolunteer')">Volunteer Now</button>
                 </div>
-                <div class="gallery-image">
-                    <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 4">
-                </div>
-                <div class="gallery-image">
-                    <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 5">
-                </div>
-                <div class="gallery-image">
-                    <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 6">
-                </div>
-            </div>
-            <div class="view-all-images">
-                <a href="gallery.html" class="view-all-button">View All Images</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="gallery">
+    <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <div class="gallery-image">
+                <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-image">
+                <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-image">
+                <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 3">
+            </div>
+            <div class="gallery-image">
+                <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 4">
+            </div>
+            <div class="gallery-image">
+                <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 5">
+            </div>
+            <div class="gallery-image">
+                <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 6">
+            </div>
+        </div>
+        <div class="view-all-images">
+            <a href="gallery.html" class="view-all-button">View All Images</a>
+        </div>
+    </div>
+</section>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -250,6 +251,222 @@
             alert(`You have registered for the ${eventName}`);
         }
     </script>
+     <!-- Funding Initiative Modal -->
+<div id="modalFunding" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Funding Initiative Application</h2>
+            <span class="close" onclick="closeModal('modalFunding')">&times;</span>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="funding-name">Name</label>
+                    <input type="text" id="funding-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="funding-email">Email</label>
+                    <input type="email" id="funding-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="funding-phone">Phone</label>
+                    <input type="tel" id="funding-phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="funding-project">Project Description</label>
+                    <textarea id="funding-project" name="project" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Apply">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Internship Modal -->
+<div id="modalInternship" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Internship Application</h2>
+            <span class="close" onclick="closeModal('modalInternship')">&times;</span>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="internship-name">Name</label>
+                    <input type="text" id="internship-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="internship-email">Email</label>
+                    <input type="email" id="internship-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="internship-phone">Phone</label>
+                    <input type="tel" id="internship-phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="internship-position">Position Interested</label>
+                    <textarea id="internship-position" name="position" rows="2" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Apply">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Achievement Modal -->
+<div id="modalAchievement" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Achievement Details</h2>
+            <span class="close" onclick="closeModal('modalAchievement')">&times;</span>
+        </div>
+        <div class="modal-body">
+                <p>We celebrate the outstanding achievements of our students in various fields. Stay tuned for the details of the award ceremony and the list of awardees.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Webinar Modal -->
+<div id="modalWebinar" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Webinar Registration</h2>
+            <span class="close" onclick="closeModal('modalWebinar')">&times;</span>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="webinar-name">Name</label>
+                    <input type="text" id="webinar-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="webinar-email">Email</label>
+                    <input type="email" id="webinar-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="webinar-phone">Phone</label>
+                    <input type="tel" id="webinar-phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="webinar-topics">Topics Interested</label>
+                    <textarea id="webinar-topics" name="topics" rows="2" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Meeting Modal -->
+<div id="modalMeeting" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Meeting Registration</h2>
+            <span class="close" onclick="closeModal('modalMeeting')">&times;</span>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="meeting-name">Name</label>
+                    <input type="text" id="meeting-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="meeting-email">Email</label>
+                    <input type="email" id="meeting-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="meeting-phone">Phone</label>
+                    <input type="tel" id="meeting-phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="meeting-date">Date of Meeting</label>
+                    <input type="date" id="meeting-date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="meeting-time">Time</label>
+                    <input type="time" id="meeting-time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Attend">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Festival Modal -->
+<div id="modalFestival" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Festival Registration</h2>
+            <span class="close" onclick="closeModal('modalFestival')">&times;</span>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="festival-name">Name</label>
+                    <input type="text" id="festival-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="festival-email">Email</label>
+                    <input type="email" id="festival-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="festival-phone">Phone</label>
+                    <input type="tel" id="festival-phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="festival-date">Date of Event</label>
+                    <input type="date" id="festival-date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Volunteer Modal -->
+<div id="modalVolunteer" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Volunteer Registration</h2>
+            <span class="close" onclick="closeModal('modalVolunteer')">&times;</span>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="volunteer-name">Name</label>
+                    <input type="text" id="volunteer-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="volunteer-email">Email</label>
+                    <input type="email" id="volunteer-email" name="email" required>
+                </div>
+                        <div class="form-group">
+                            <label for="volunteer-phone">Phone</label>
+                            <input type="tel" id="volunteer-phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="volunteer-availability">Availability</label>
+                            <textarea id="volunteer-availability" name="availability" rows="2" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Register">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+
 </body>
 
 </html>

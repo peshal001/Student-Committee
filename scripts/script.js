@@ -265,3 +265,24 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', handlePagination);
     });
 });
+
+
+
+
+
+
+// JavaScript to handle modals
+function showModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+
+// Close modal when clicking outside of the modal content
+window.onclick = function (event) {
+    if (event.target.classList.contains('modal')) {
+        event.target.style.display = "none";
+    }
+}
