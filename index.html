@@ -1,140 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Organization Website</title>
+    <title>Student Committee Website</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/chatbot.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="./js/script.js" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/remixicon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+   <title>student Committee</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
-
 <body>
-    <!-- Top Header Section -->
-    <div class="header-top">
-        <nav>
-            <div class="left">
-                <span class="date" id="current-date"></span>
+
+<div class="preloader-area">
+    <div class="spinner">
+        <div class="inner">
+            <div class="disc"></div>
+            <div class="disc"></div>
+            <div class="disc"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="top-header-area">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6">
+                <div class="header-left-content">
+                    <p>Get the latest updates of student Committee</p>
+                </div>
             </div>
-            <div class="right">
-                <a href="mailto:info@studentorganization.com">info@studentorganization.com</a>
-                <a href="tel:+123456789">+123456789</a>
+            <div class="col-lg-6 col-md-6">
+                <div class="header-right-content">
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="login-signup.html">
+                                    <i class="fas fa-user-lock login-icon"></i>
+                                    Login
+                                </a>
+                            </li>
+                                <li><a href="visitors-dashboard.html">Visitors</a></li>
+                                <li><a href="alumni-dashboard.html">Alumni</a></li>
+                                <li><a href="login-admin.html">Admin</a></li>
+                        </ul>                        
+                    </div>
+                </div>
             </div>
-        </nav>
+        </div>
+    </div>
+</div>
+
+
+<div class="navbar-area nav-bg-2">
+    <div class="mobile-responsive-nav">
+        <div class="container">
+            <div class="mobile-responsive-menu">
+                <div class="logo">
+                    <a href="indexhtml">
+                        <img src="./Assets/images/logo.png" class="main-logo" lt="logo">
+                        <img src="./Assets/images/logo.png" class="white-logo" alt="logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="desktop-nav">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="./Assets/images/logo.png" class="main-logo" alt="logo" href="index.html">
+                    <img src="./Assets/images/logo.png" class="white-logo" alt="logo">
+                </a>
+                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link  active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link dropdown-toggle">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="faq.html" class="nav-link">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="forums.html" class="nav-link dropdown-toggle">
+                                Forums
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="membership.html" class="nav-link">Membership</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="registation.html" class="nav-link">Registration</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link ">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="events.html" class="nav-link dropdown-toggle">
+                                Events
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="events.html" class="nav-link">Upcoming Events</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="events.html" class="nav-link">Past Events</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="others-options">
+                        <div class="icon">
+                            <i class="ri-menu-3-fill" data-bs-toggle="modal" data-bs-target="#sidebarModal"></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="others-option-for-responsive">
+        <div class="container">
+            <div class="dot-menu">
+                <div class="inner">
+                    <div class="icon">
+                        <i class="ri-menu-3-fill" data-bs-toggle="modal" data-bs-target="#sidebarModal"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="sidebarModal modal right fade" id="sidebarModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-bs-dismiss="modal"><i class="ri-close-line"></i></button>
+            <div class="modal-body">
+                <a href="index.html">
+                    <img src="./Assets/./Assets/images/logo.png" class="main-logo" alt="logo">
+                    <img src="./Assets/./Assets/images/logo.png" class="white-logo" alt="logo">
+                </a>
+                <div class="sidebar-content">
+                    <h3>About Us</h3>
+                    <p>Our student Committee aims to bring together like-minded individuals who are passionate about learning, 
+                        growing, and making a difference. We offer a range of activities, resources, and events designed to help 
+                        you achieve your goals.</p>
+                    <div class="sidebar-btn">
+                        <a href="contact.html" class="default-btn">Let's Talk</a>
+                    </div>
+                </div>
+                <div class="sidebar-contact-info">
+                    <h3>Contact Information</h3>
+                    <ul class="info-list">
+                        <li><i class="ri-phone-fill"></i> <a href="tel:(123)456-789">(123)456-789</a></li>
+                        <li><i class="ri-mail-line"></i><a
+                                href="#"><span
+                                    class="__cf_email__"
+                                    data-cfemail="">info@studentCommittee.com</span></a>
+                        </li>
+                        <li><i class="ri-map-pin-line"></i>Maitedevi,Kathmandu</li>
+                    </ul>
+                </div>
+                <ul class="sidebar-social-list">
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/?lang=en" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/?lang=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+                <div class="contact-form">
+                    <h3>Ready to Get Started?</h3>
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" required=""
+                                        data-error="Please enter your name" placeholder="Your name">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-6">
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" required=""
+                                        data-error="Please enter your email" placeholder="Your email address">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group">
+                                    <input type="text" name="phone_number" class="form-control" required=""
+                                        data-error="Please enter your phone number" placeholder="Your phone number">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" cols="30" rows="6" required=""
+                                        data-error="Please enter your message"
+                                        placeholder="Write your message..."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <button type="submit" class="default-btn">Send Message<span></span></button>
+                                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="hero">
+        <div class="carousel-container" id="carousel">
+            <!-- Video Background -->
+            <video class="carousel-video" autoplay muted loop>
+                <source src="Assets/images/course-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- Quote Slides -->
+            <div class="carousel-slide active">
+                <div class="carousel-caption"> Welcome to Our Student Committee</div>
+            </div>
+            <div class="carousel-slide">
+                <div class="carousel-caption">“Education is the most powerful weapon which you can use to change the world.” - Nelson Mandela</div>
+            </div>
+            <div class="carousel-slide">
+                <div class="carousel-caption">“The beautiful thing about learning is that no one can take it away from you.” - B.B. King</div>
+            </div>
+            <div class="carousel-slide">
+                <div class="carousel-caption">“An investment in knowledge pays the best interest.” - Benjamin Franklin</div>
+            </div>
+        </div>
     </div>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="membership.html">Membership</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="forums.html">Forums</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li class="login-dropdown">
-                <a href="#"><i class="fas fa-user"></i> Login</a>
-                <div class="dropdown-content">
-                    <a href="login-student.html">Student Login</a>
-                    <a href="login-teacher.html">Teacher Login</a>
-                    <a href="login-admin.html">Admin Login</a>
-                </div>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <h1>Welcome to Our Student Organization</h1>
-        <p>Join us for events, resources, and community support.</p>
-    </header>
-
-    <!-- News and Events Carousel -->
-    <section class="carousel">
-        <div class="carousel-container">
-            <div class="carousel-slide">
-                <img src="images/sample1.jpg" alt="Event 1">
-                <div class="carousel-caption">Upcoming Event: Workshop on Web Development</div>
+  
+<!-- Our Services Section -->
+<section class="iq-features">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-3 col-md-12"></div>
+      <div class="col-lg-6 col-md-12" id="Services">
+        <h2 class="text-center">Our Services</h2>
+        <div class="holderCircle">
+          <div class="round"></div>
+          <div class="dotCircle">
+            <span class="itemDot active itemDot1" data-tab="1">
+              <i class="fa fa-compass"></i>
+              <span class="forActive"></span>
+            </span>
+            <span class="itemDot itemDot2" data-tab="2">
+              <i class="fa fa-video-camera"></i>
+              <span class="forActive"></span>
+            </span>
+            <span class="itemDot itemDot3" data-tab="3">
+              <i class="fa fa-book"></i>
+              <span class="forActive"></span>
+            </span>
+            <span class="itemDot itemDot4" data-tab="4">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span class="forActive"></span>
+            </span>
+            <span class="itemDot itemDot5" data-tab="5">
+              <i class="fa fa-users"></i>
+              <span class="forActive"></span>
+            </span>
+            <span class="itemDot itemDot6" data-tab="6">
+              <i class="fa-solid fa-network-wired"></i>
+              <span class="forActive"></span>
+            </span>
+          </div>
+          <div class="contentCircle">
+            <div class="CirItem title-box active CirItem1">
+              <h2 class="title"><span>Career Guidance</span></h2>
+              <p>Receive professional advice and resources to help you navigate your career path and achieve your goals.</p>
+              <i class="fa fa-compass"></i>
             </div>
-            <div class="carousel-slide">
-                <img src="images/sample2.jpg" alt="Event 2">
-                <div class="carousel-caption">Latest News: Our Organization Wins Award</div>
+            <div class="CirItem title-box CirItem2">
+              <h2 class="title"><span>Webinars</span></h2>
+              <p>Attend live webinars on various topics hosted by experts in the field.</p>
+              <i class="fa fa-video-camera"></i>
             </div>
-            <div class="carousel-slide">
-                <img src="images/sample3.jpeg" alt="Event 3">
-                <div class="carousel-caption">Highlight: Annual Sports Meet</div>
+            <div class="CirItem title-box CirItem3">
+              <h2 class="title"><span>Resource Center</span></h2>
+              <p>Access our library of resources including books, articles, and study materials.</p>
+              <i class="fa fa-book"></i>
             </div>
+            <div class="CirItem title-box CirItem4">
+              <h2 class="title"><span>Event Management</span></h2>
+              <p>We organize a variety of events throughout the year, catering to different interests and skills.</p>
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+            <div class="CirItem title-box CirItem5">
+              <h2 class="title"><span>Community Support</span></h2>
+              <p>Join a supportive community that encourages personal growth and development.</p>
+              <i class="fa fa-users"></i>
+            </div>
+            <div class="CirItem title-box CirItem6">
+              <h2 class="title"><span>Networking</span></h2>
+              <p>Connect with peers, mentors, and industry professionals to expand your network.</p>
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+          </div>
         </div>
-        <button class="carousel-prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="carousel-next" onclick="moveSlide(1)">&#10095;</button>
-    </section>
-
-    <!-- Our Services Section -->
-    <section class="our-services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-items">
-                <div class="service-item">
-                    <h3>Event Management</h3>
-                    <p>We organize a variety of events throughout the year, catering to different interests and skills.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Resource Center</h3>
-                    <p>Access our library of resources including books, articles, and study materials.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Community Support</h3>
-                    <p>Join a supportive community that encourages personal growth and development.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Networking</h3>
-                    <p>Connect with peers, mentors, and industry professionals to expand your network.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+      </div>
+      <div class="col-lg-3 col-md-12"></div>
+    </div>
+  </div>
+</section>
 
  <!-- News, Notices & Gallery -->
- <section class="news-notice-gallery" id="Latest-News">
+ <section class="timeline-section section-padding" id="section_3">
+    <div class="section-overlay"></div>
+    <div class="row">
+        <div class="col-12 text-center" id="latest-news">
+            <h2 class="news-head">Latest News</h2>
+        </div>
     <div class="container">
-        <div class="news">
-            <h2>Latest News</h2>
-            <div class="news-items">
-                <div class="news-item">
-                    <h3>New Funding Initiative</h3>
-                    <p>Explore our new funding initiative to support student projects and innovations.</p>
-                    <button class="btn" onclick="showModal('modalFunding')">Apply Now</button>
-                </div>
-                <div class="news-item">
-                    <h3>Summer Internship Program</h3>
-                    <p>Applications now open for our summer internship program. Apply today!</p>
-                    <button class="btn" onclick="showModal('modalInternship')">Apply Now</button>
-                </div>
-                <div class="news-item">
-                    <h3>Student Achievement Awards</h3>
-                    <p>Celebrating outstanding student achievements in academics and extracurricular activities.</p>
-                    <button class="btn" onclick="showModal('modalAchievement')">Learn More</button>
-                </div>
-                <div class="news-item">
-                    <h3>Upcoming Webinar Series</h3>
-                    <p>Join our upcoming webinar series on career readiness and personal development.</p>
-                    <button class="btn" onclick="showModal('modalWebinar')">Register Now</button>
+            <div class="col-lg-10 col-12 mx-auto">
+                <div class="timeline-container">
+                    <ul class="vertical-scrollable-timeline" id="vertical-scrollable-timeline">
+                        <div class="list-progress">
+                            <div class="inner"></div>
+                        </div>
+                        <li>
+                            <h4 class="text-white mb-3">New Library Opening</h4>
+                            <p class="text-white">Join us for the grand opening of the new library facility on campus. Discover the expanded resources and modern amenities designed to enhance your learning experience.</p>
+                            <p class="text-white mb-3">Date: September 10, 2024</p>
+                            <button class="btn" onclick="showModal('modalLibraryOpening')">Learn More</button>
+                            <div class="icon-holder">
+                                <i class="bi-house-door"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <h4 class="text-white mb-3">New Fitness Center Opening</h4>
+                            <p class="text-white">Were excited to announce the opening of a new fitness center on campus. Enjoy state-of-the-art equipment and a range of fitness classes to keep you active and healthy.</p>
+                            <p class="text-white mb-3">Opening Date: October 1, 2024</p>
+                            <button class="btn" onclick="showModal('modalFitnessCenter')">Learn More</button>
+                            <div class="icon-holder">
+                                <i class="bi-people"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <h4 class="text-white mb-3">Annual Career Fair</h4>
+                            <p class="text-white">Meet with potential employers, attend workshops, and network with industry professionals at our annual career fair. A great opportunity to jumpstart your career.</p>
+                            <p class="text-white mb-3">Date: October 5, 2024</p>
+                            <button class="btn" onclick="showModal('modalCareerFair')">Register Now</button>
+                            <div class="icon-holder">
+                                <i class="bi-briefcase"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <h4 class="text-white mb-3">Research Symposium</h4>
+                            <p class="text-white">Attend our annual research symposium showcasing the latest research and innovations from students and faculty. Engage with presentations and discussions on cutting-edge topics.</p>
+                            <p class="text-white mb-3">Date: November 20, 2024</p>
+                            <button class="btn" onclick="showModal('modalResearchSymposium')">Learn More</button>
+                            <div class="icon-holder">
+                                <i class="bi-lightbulb"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <h4 class="text-white mb-3">Holiday Charity Drive</h4>
+                            <p class="text-white">Get involved in our holiday charity drive supporting local families in need. Donations of goods and funds are greatly appreciated.</p>
+                            <p class="text-white mb-3">Drive Period: December 1-15, 2024</p>
+                            <button class="btn" onclick="showModal('modalCharityDrive')">Donate Now</button>
+                            <div class="icon-holder">
+                                <i class="bi-heart-fill"></i>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
+            <div class="col-12 text-center mt-5">
+                <p class="text-white">
+                    Want to stay updated?
+                    <a href="#" class="btn custom-btn custom-border-btn ms-3" onclick="showModal('modalNewsletter')">Subscribe to Newsletter</a>
+                </p>
+            </div>            
         </div>
+    </div>
+</section>
 
-        <div class="notice-board">
+        <div class="notice-board" id="notice-board">
             <h2>Notice Board</h2>
             <div class="notice-items">
                 <div class="notice-item">
                     <h3>Annual General Meeting</h3>
                     <p>Date: July 15, 2024</p>
-                    <p>Join us for our annual general meeting to discuss key organization updates and future plans.</p>
+                    <p>Join us for our annual general meeting to discuss key Committee updates and future plans.</p>
                     <button class="btn" onclick="showModal('modalMeeting')">Attend Now</button>
                 </div>
                 <div class="notice-item">
@@ -160,22 +450,22 @@
         <h2>Gallery</h2>
         <div class="gallery-images">
             <div class="gallery-image">
-                <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 1">
+                <img src="./Assets/images/gallery-img1.jpg" alt="Gallery Image 1">
             </div>
             <div class="gallery-image">
-                <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 2">
+                <img src="./Assets/images/gallery-img2.jpg" alt="Gallery Image 2">
             </div>
             <div class="gallery-image">
-                <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 3">
+                <img src="./Assets/images/gallery-img3.jpg" alt="Gallery Image 3">
             </div>
             <div class="gallery-image">
-                <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 4">
+                <img src="./Assets/images/gallery-img4.jpg" alt="Gallery Image 4">
             </div>
             <div class="gallery-image">
-                <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 5">
+                <img src="./Assets/images/gallery-img5.jpg" alt="Gallery Image 5">
             </div>
             <div class="gallery-image">
-                <img src="https://pujacraft.com/cdn/shop/articles/Krishna-Janmashtami--2023-date1_64f79e1e5e4f8.jpg?v=1693982466" alt="Gallery Image 6">
+                <img src="./Assets/images/gallery-img6.jpg" alt="Gallery Image 6">
             </div>
         </div>
         <div class="view-all-images">
@@ -184,44 +474,106 @@
     </div>
 </section>
 
+<section>
+    <h1>Our collaboration</h1>
+    <div class="slider">
+        <div class="slider-items">
+            <img src="./Assets/images/apu.jpeg" alt="APU" width="150">
+            <img src="./Assets/images/lbef.jpg" alt="LBEF" width="150">
+            <img src="./Assets/images/nc.jpeg" alt="NC" width="150">
+            <img src="./Assets/images/pcps.png" alt="PCPS" width="150">
+            <!-- Duplicate images for continuous scrolling -->
+            <img src="./Assets/images/apu.jpeg" alt="APU" width="150">
+            <img src="./Assets/images/lbef.jpg" alt="LBEF" width="150">
+            <img src="./Assets/images/nc.jpeg" alt="NC" width="150">
+            <img src="./Assets/images/pcps.png" alt="PCPS" width="150">
+            <!-- Duplicate images for continuous scrolling -->
+            <img src="./Assets/images/apu.jpeg" alt="APU" width="150">
+            <img src="./Assets/images/lbef.jpg" alt="LBEF" width="150">
+            <img src="./Assets/images/nc.jpeg" alt="NC" width="150">
+            <img src="./Assets/images/pcps.png" alt="PCPS" width="150">
+        </div>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <img src="images/logo.png" alt="Logo" class="footer-logo">
-            <div class="footer-content">
-                <div class="footer-section about">
-                    <h3>About Us</h3>
-                    <p>Our student organization aims to bring together like-minded individuals who are passionate about learning, growing, and making a difference. We offer a range of activities, resources, and events designed to help you achieve your goals.</p>
-                    <div class="footer-social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section quick-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="#Latest-News">News</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section contact-info">
-                    <h3>Contact Information</h3>
-                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
-                    <p><i class="fas fa-envelope"></i> info@studentorganization.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Maitedevi, Kathmandu</p>
-                </div>
+<section class="container card-container">
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <p><i class="fa fa-user"></i></p>
+                <h3><span class="counter" data-target="11">0</span>+</h3>
+                <p>Partners</p>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Student Organization. All rights reserved.</p>
+    
+        <div class="column">
+            <div class="card">
+                <p><i class="fa fa-check"></i></p>
+                <h3><span class="counter" data-target="55">0</span>+</h3>
+                <p>Projects</p>
+            </div>
         </div>
-    </footer>
+    
+        <div class="column">
+            <div class="card">
+                <p><i class="fa fa-smile-o"></i></p>
+                <h3><span class="counter" data-target="100">0</span>+</h3>
+                <p>Happy Clients</p>
+            </div>
+        </div>
+    
+        <div class="column">
+            <div class="card">
+                <p><i class="fa fa-coffee"></i></p>
+                <h3><span class="counter" data-target="100">0</span>+</h3>
+                <p>Meetings</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h3>About Us</h3>
+          <p>
+            Our student Committee aims to bring together like-minded
+            individuals who are passionate about learning, growing, and making
+            a difference. We offer a range of activities, resources, and
+            events designed to help you achieve your goals.
+          </p>
+          <div class="footer-social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-section quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#Latest-News">News</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact-info">
+          <h3>Contact Information</h3>
+          <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+          <p><i class="fas fa-envelope"></i> info@studentCommittee.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Maitedevi, Kathmandu</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Student Committee. All rights reserved.</p>
+    </div>
+  </footer>
 
     <!-- Chatbot Container -->
     <div id="chatbot" class="chatbot">
@@ -235,133 +587,230 @@
         <div id="chatbot-footer" class="chatbot-footer">
             <input type="text" id="chatbot-input" class="chatbot-input" placeholder="Type your message...">
             <button id="chatbot-send" class="chatbot-send">Send</button>
+            <button id="voice-icon" class="voice-icon">&#127897;</button> 
         </div>
     </div>
+    
 
     <!-- Chatbot Toggle Button -->
     <button id="chatbot-toggle" class="chatbot-toggle">
-        <img src="images/chat-icon.png" alt="Chat Icon" class="chatbot-icon">
+        <img src="Assets/images/chat-icon.png" alt="Chat Icon" class="chatbot-icon">
         <span>Chat with us</span>
     </button>
+    <!-- Scroll to Top Arrow -->
+<button id="scroll-to-top" class="scroll-to-top">
+    &#8679;
+</button>
 
-    <script src="scripts/script.js"></script>
-    <script src="scripts/chatbot.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/chatbot.js"></script>
     <script>
         function registerEvent(eventName) {
             alert(`You have registered for the ${eventName}`);
         }
     </script>
-     <!-- Funding Initiative Modal -->
-<div id="modalFunding" class="modal">
+
+<!-- Library Opening Modal -->
+<div id="modalLibraryOpening" class="modal">
     <div class="modal-content">
         <div class="modal-header">
-            <h2>Funding Initiative Application</h2>
-            <span class="close" onclick="closeModal('modalFunding')">&times;</span>
+            <h2>New Library Opening</h2>
+            <span class="close" onclick="closeModal('modalLibraryOpening')">&times;</span>
         </div>
         <div class="modal-body">
-            <form>
+            <p>Join us for the grand opening of the new library facility on campus. Discover the expanded resources and modern amenities designed to enhance your learning experience.</p>
+            <p>Date: September 10, 2024</p>
+            <form id="formLibraryOpening" action="/submit" method="post">
                 <div class="form-group">
-                    <label for="funding-name">Name</label>
-                    <input type="text" id="funding-name" name="name" required>
+                    <label for="lib-name">Name</label>
+                    <input type="text" id="lib-name" name="name" required>
                 </div>
                 <div class="form-group">
-                    <label for="funding-email">Email</label>
-                    <input type="email" id="funding-email" name="email" required>
+                    <label for="lib-email">Email</label>
+                    <input type="email" id="lib-email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="funding-phone">Phone</label>
-                    <input type="tel" id="funding-phone" name="phone" required>
+                    <label for="lib-phone">Phone</label>
+                    <input type="tel" id="lib-phone" name="phone" required>
                 </div>
                 <div class="form-group">
-                    <label for="funding-project">Project Description</label>
-                    <textarea id="funding-project" name="project" rows="4" required></textarea>
+                    <label for="lib-comments">Comments</label>
+                    <textarea id="lib-comments" name="comments" rows="4"></textarea>
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Apply">
+                    <input type="submit" value="Submit">
                 </div>
             </form>
         </div>
     </div>
 </div>
 
-<!-- Internship Modal -->
-<div id="modalInternship" class="modal">
+<!-- Fitness Center Modal -->
+<div id="modalFitnessCenter" class="modal">
     <div class="modal-content">
         <div class="modal-header">
-            <h2>Internship Application</h2>
-            <span class="close" onclick="closeModal('modalInternship')">&times;</span>
+            <h2>New Fitness Center Opening</h2>
+            <span class="close" onclick="closeModal('modalFitnessCenter')">&times;</span>
         </div>
         <div class="modal-body">
-            <form>
+            <p>We are excited to announce the opening of a new fitness center on campus. Enjoy state-of-the-art equipment and a range of fitness classes to keep you active and healthy.</p>
+            <p>Opening Date: October 1, 2024</p>
+            <form id="formFitnessCenter" action="/submit" method="post">
                 <div class="form-group">
-                    <label for="internship-name">Name</label>
-                    <input type="text" id="internship-name" name="name" required>
+                    <label for="fit-name">Name</label>
+                    <input type="text" id="fit-name" name="name" required>
                 </div>
                 <div class="form-group">
-                    <label for="internship-email">Email</label>
-                    <input type="email" id="internship-email" name="email" required>
+                    <label for="fit-email">Email</label>
+                    <input type="email" id="fit-email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="internship-phone">Phone</label>
-                    <input type="tel" id="internship-phone" name="phone" required>
+                    <label for="fit-phone">Phone</label>
+                    <input type="tel" id="fit-phone" name="phone" required>
                 </div>
                 <div class="form-group">
-                    <label for="internship-position">Position Interested</label>
-                    <textarea id="internship-position" name="position" rows="2" required></textarea>
+                    <label for="fit-comments">Comments</label>
+                    <textarea id="fit-comments" name="comments" rows="4"></textarea>
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Apply">
+                    <input type="submit" value="Submit">
                 </div>
             </form>
         </div>
     </div>
 </div>
 
-<!-- Achievement Modal -->
-<div id="modalAchievement" class="modal">
+<!-- Career Fair Modal -->
+<div id="modalCareerFair" class="modal">
     <div class="modal-content">
         <div class="modal-header">
-            <h2>Achievement Details</h2>
-            <span class="close" onclick="closeModal('modalAchievement')">&times;</span>
+            <h2>Annual Career Fair</h2>
+            <span class="close" onclick="closeModal('modalCareerFair')">&times;</span>
         </div>
         <div class="modal-body">
-                <p>We celebrate the outstanding achievements of our students in various fields. Stay tuned for the details of the award ceremony and the list of awardees.</p>
-        </div>
-    </div>
-</div>
-
-<!-- Webinar Modal -->
-<div id="modalWebinar" class="modal">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h2>Webinar Registration</h2>
-            <span class="close" onclick="closeModal('modalWebinar')">&times;</span>
-        </div>
-        <div class="modal-body">
-            <form>
+            <p>Meet with potential employers, attend workshops, and network with industry professionals at our annual career fair. A great opportunity to jumpstart your career.</p>
+            <p>Date: October 5, 2024</p>
+            <form id="formCareerFair" action="/submit" method="post">
                 <div class="form-group">
-                    <label for="webinar-name">Name</label>
-                    <input type="text" id="webinar-name" name="name" required>
+                    <label for="car-name">Name</label>
+                    <input type="text" id="car-name" name="name" required>
                 </div>
                 <div class="form-group">
-                    <label for="webinar-email">Email</label>
-                    <input type="email" id="webinar-email" name="email" required>
+                    <label for="car-email">Email</label>
+                    <input type="email" id="car-email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="webinar-phone">Phone</label>
-                    <input type="tel" id="webinar-phone" name="phone" required>
+                    <label for="car-phone">Phone</label>
+                    <input type="tel" id="car-phone" name="phone" required>
                 </div>
                 <div class="form-group">
-                    <label for="webinar-topics">Topics Interested</label>
-                    <textarea id="webinar-topics" name="topics" rows="2" required></textarea>
+                    <label for="car-comments">Comments</label>
+                    <textarea id="car-comments" name="comments" rows="4"></textarea>
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Register">
+                    <input type="submit" value="Submit">
                 </div>
             </form>
         </div>
     </div>
 </div>
+
+<!-- Research Symposium Modal -->
+<div id="modalResearchSymposium" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Research Symposium</h2>
+            <span class="close" onclick="closeModal('modalResearchSymposium')">&times;</span>
+        </div>
+        <div class="modal-body">
+            <p>Attend our annual research symposium showcasing the latest research and innovations from students and faculty. Engage with presentations and discussions on cutting-edge topics.</p>
+            <p>Date: November 20, 2024</p>
+            <form id="formResearchSymposium" action="/submit" method="post">
+                <div class="form-group">
+                    <label for="res-name">Name</label>
+                    <input type="text" id="res-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="res-email">Email</label>
+                    <input type="email" id="res-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="res-phone">Phone</label>
+                    <input type="tel" id="res-phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="res-comments">Comments</label>
+                    <textarea id="res-comments" name="comments" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Charity Drive Modal -->
+<div id="modalCharityDrive" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Holiday Charity Drive</h2>
+            <span class="close" onclick="closeModal('modalCharityDrive')">&times;</span>
+        </div>
+        <div class="modal-body">
+            <p>Get involved in our holiday charity drive supporting local families in need. Donations of goods and funds are greatly appreciated.</p>
+            <p>Drive Period: December 1-15, 2024</p>
+            <form id="formCharityDrive" action="/submit" method="post">
+                <div class="form-group">
+                    <label for="cha-name">Name</label>
+                    <input type="text" id="cha-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="cha-email">Email</label>
+                    <input type="email" id="cha-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="cha-phone">Phone</label>
+                    <input type="tel" id="cha-phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="cha-comments">Comments</label>
+                    <textarea id="cha-comments" name="comments" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Newsletter Subscription Modal -->
+<div id="modalNewsletter" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Subscribe to Newsletter</h2>
+            <span class="close" onclick="closeModal('modalNewsletter')">&times;</span>
+        </div>
+        <div class="modal-body">
+            <p>Stay updated with the latest news and events by subscribing to our newsletter. Fill in your details below to receive regular updates directly in your inbox.</p>
+            <form id="formNewsletter" action="/subscribe" method="post">
+                <div class="form-group">
+                    <label for="news-name">Name</label>
+                    <input type="text" id="news-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="news-email">Email</label>
+                    <input type="email" id="news-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Subscribe">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 
 <!-- Meeting Modal -->
 <div id="modalMeeting" class="modal">
@@ -465,8 +914,32 @@
                 </div>
             </div>
         </div>
-        
+        <script data-cfasync="false" src="./js/email-decode.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/jquery.meanmenu.js"></script>
+
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <script src="./js/carousel-thumbs.min.js"></script>
+
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+
+    <script src="./js/aos.js"></script>
+
+    <script src="./js/odometer.min.js"></script>
+
+    <script src="./js/appear.min.js"></script>
+
+    <script src="./js/form-validator.min.js"></script>
+
+    <script src="./js/contact-form-script.js"></script>
+
+    <script src="./js/ajaxchimp.min.js"></script>
+
+    <script src="./js/custom.js"></script>
 
 </body>
-
 </html>

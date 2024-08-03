@@ -1,0 +1,51 @@
+[
+  {
+    "id": "0",
+    "date": "2024-07-10",
+    "title": "AI Assistance In Study",
+    "image": "assets/images/post1.jpg",
+    "summary": "With the rise of AI, tools like GPT-4 are revolutionizing the way students approach their studies. Imagine having a virtual assistant to help with research, writing, and even problem-solving. Dive into how GPT-4 can make your homework sessions more efficient and less stressful."
+  },
+  {
+    "id": "1",
+    "date": "2024-07-10",
+    "title": "Cybersecurity in the Modern Era",
+    "image": "assets/images/post8.jpg",
+    "summary": "As cyber threats become more sophisticated, cybersecurity is crucial for protecting sensitive information. Explore the latest trends in cybersecurity and how individuals and Committees can safeguard themselves against attacks."
+  },
+  {
+    "id": "2",
+    "date": "2024-07-10",
+    "title": "The Future of Autonomous Vehicles",
+    "image": "assets/images/post2.jpg",
+    "summary": "Autonomous vehicles are no longer just a concept. Discover how advancements in AI and machine learning are driving the future of self-driving cars, and what this means for our daily commutes and safety on the road."
+  },
+  {
+    "id": "3",
+    "date": "2024-07-10",
+    "title": "Exploring The Quantum Computing",
+    "image": "assets/images/post3.jpg",
+    "summary": "Quantum computing is set to revolutionize the tech world with its potential to solve complex problems beyond the reach of classical computers. Explore the fundamentals of quantum computing and its possible applications."
+  },
+  {
+    "id": "4",
+    "date": "2024-07-10",
+    "title": "The Rise of Remote Work",
+    "image": "assets/images/post4.jpg",
+    "summary": "Remote work has become more prevalent than ever before. Learn about the benefits and challenges of working from home, and how companies and employees are adapting to this new way of working."
+  },
+  {
+    "id": "5",
+    "date": "2024-07-10",
+    "title": "Blockchain Beyond Cryptocurrency",
+    "image": "assets/images/post5.jpg",
+    "summary": "Blockchain technology is often associated with cryptocurrencies, but its applications extend far beyond that. Discover how blockchain is being used in supply chains, healthcare, and other industries."
+  },
+  {
+    "id": "6",
+    "date": "2024-07-10",
+    "title": "The Impact of 5G Technology",
+    "image": "assets/images/post6.jpg",
+    "summary": "5G technology promises to transform communication with its high-speed data and low latency. Explore how 5G will enhance mobile connectivity and what it means for emerging technologies like IoT."
+  }
+]

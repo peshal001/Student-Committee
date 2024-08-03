@@ -3,36 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membership - Student Organization</title>
+    <title>Membership - Student Committee</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/remixicon.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="membership.html">Membership</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="forums.html">Forums</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-        </ul>
-    </nav>
-
+    <div class="preloader-area">
+        <div class="spinner">
+            <div class="inner">
+                <div class="disc"></div>
+                <div class="disc"></div>
+                <div class="disc"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="top-header-area">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6">
+                    <div class="header-left-content">
+                        <p>Get the latest updates of student Committee</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="header-right-content">
+                        <div class="list">
+                            <ul>
+                               <li>
+                                <a href="login-signup.html">
+                                    <i class="fas fa-user-lock login-icon"></i>
+                                    Login
+                                </a>
+                            </li>
+                                <li><a href="visitors-dashboard.html">Visitors</a></li>
+                                <li><a href="alumni-dashboard.html">Alumni</a></li>
+                                <li><a href="login-admin.html">Admin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="navbar-area nav-bg-2">
+        <div class="mobile-responsive-nav">
+            <div class="container">
+                <div class="mobile-responsive-menu">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./Assets/images/logo.png" class="main-logo" lt="logo">
+                            <img src="./Assets/images/logo.png" class="white-logo" alt="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="desktop-nav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./Assets/images/logo.png" class="main-logo" alt="logo">
+                        <img src="./Assets/images/logo.png" class="white-logo" alt="logo">
+                    </a>
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link  active">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                            <a href="about.html" class="nav-link dropdown-toggle">
+                                    About Us
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="faq.html" class="nav-link">FAQ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="forums.html" class="nav-link dropdown-toggle">
+                                    Forums
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Membership</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="registation.html" class="nav-link">Registration</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="blog.html" class="nav-link ">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="events.html" class="nav-link dropdown-toggle">
+                                    Events
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="events.html" class="nav-link">Upcoming Events</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="events.html" class="nav-link">Past Events</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="others-options">
+                            <div class="icon">
+                                <i class="ri-menu-3-fill" data-bs-toggle="modal" data-bs-target="#sidebarModal"></i>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="others-option-for-responsive">
+            <div class="container">
+                <div class="dot-menu">
+                    <div class="inner">
+                        <div class="icon">
+                            <i class="ri-menu-3-fill" data-bs-toggle="modal" data-bs-target="#sidebarModal"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebarModal modal right fade" id="sidebarModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-bs-dismiss="modal"><i class="ri-close-line"></i></button>
+                <div class="modal-body">
+                    <a href="index.html">
+                        <img src="./Assets/images/logo.png" class="main-logo" alt="logo">
+                        <img src="images/white-logo.png" class="white-logo" alt="logo">
+                    </a>
+                    <div class="sidebar-content">
+                        <h3>About Us</h3>
+                        <p>Our student Committee aims to bring together like-minded individuals who are passionate about learning, 
+                            growing, and making a difference. We offer a range of activities, resources, and events designed to help 
+                            you achieve your goals.</p>
+                        <div class="sidebar-btn">
+                            <a href="contact.html" class="default-btn">Let's Talk</a>
+                        </div>
+                    </div>
+                    <div class="sidebar-contact-info">
+                        <h3>Contact Information</h3>
+                        <ul class="info-list">
+                            <li><i class="ri-phone-fill"></i> <a href="tel:(123)456-789">(123)456-789</a></li>
+                            <li><i class="ri-mail-line"></i><a
+                                    href="#"><span
+                                        class="__cf_email__"
+                                        data-cfemail="">info@studentCommittee.com</span></a>
+                            </li>
+                            <li><i class="ri-map-pin-line"></i>Maitedevi,Kathmandu</li>
+                        </ul>
+                    </div>
+                    <ul class="sidebar-social-list">
+                        <li>
+                            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/?lang=en" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/?lang=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    <div class="contact-form">
+                        <h3>Ready to Get Started?</h3>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" required=""
+                                            data-error="Please enter your name" placeholder="Your name">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control" required=""
+                                            data-error="Please enter your email" placeholder="Your email address">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" name="phone_number" class="form-control" required=""
+                                            data-error="Please enter your phone number" placeholder="Your phone number">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="form-group">
+                                        <textarea name="message" class="form-control" cols="30" rows="6" required=""
+                                            data-error="Please enter your message"
+                                            placeholder="Write your message..."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12">
+                                    <button type="submit" class="default-btn">Send Message<span></span></button>
+                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Membership Section -->
     <section class="membership">
         <h1>Membership</h1>
-        <p>Join our student organization to enjoy a wide range of benefits and opportunities to enhance your university experience.</p>
+        <p>Join our student Committee to enjoy a wide range of benefits and opportunities to enhance your university experience.</p>
         
         <h2>Membership Types</h2>
         <ul>
             <li><strong>Basic Membership:</strong> Access to all events and resources, participation in forums, and monthly newsletter.</li>
-            <li><strong>Premium Membership:</strong> All Basic Membership benefits plus exclusive workshops, priority event registration, and special discounts.</li>
+            <li><strong>Premium Membership:</strong> All Basic Membership benefits plus exclusive workshops, priority event registration, special discounts, and automatic registration to all events throughout the subscription year.</li>
         </ul>
 
         <h2>Benefits</h2>
@@ -41,50 +253,183 @@
             <li>Access to exclusive events and workshops</li>
             <li>Monthly newsletters with the latest news and updates</li>
             <li>Discounts on events and resources</li>
-            <li>Opportunities to develop leadership and organizational skills</li>
+            <li>Opportunities to develop leadership and Committeeal skills</li>
         </ul>
 
-        <h2>Application Form</h2>
-        <form id="membership-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="membership-type">Membership Type:</label>
-            <select id="membership-type" name="membership-type" required>
-                <option value="basic">Basic Membership</option>
-                <option value="premium">Premium Membership</option>
-            </select>
-
-            <label for="comments">Comments:</label>
-            <textarea id="comments" name="comments"></textarea>
-
-            <button type="submit">Apply Now</button>
+        <h2>Membership Form</h2>
+        <form onsubmit="return validateForm(event)">
+            <div class="registration-form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="registration-form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="registration-form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="registration-form-group">
+                <label for="contact">Contact</label>
+                <div style="display: flex;">
+                    <span class="contact-prefix">+977</span>
+                    <input type="text" id="contact" name="contact" maxlength="10" required class="contact-input">
+                </div>
+            </div>
+            <div class="registration-form-group">
+                <label for="membership-duration">Membership Duration</label>
+                <select id="membership-duration" name="membership-duration" required>
+                    <option value="">Select duration</option>
+                    <option value="1">1 Year</option>
+                    <option value="2">2 Years</option>
+                    <option value="3">3 Years</option>
+                </select>
+            </div>
+            <div class="registration-form-group">
+                <label for="membershipCategory">Membership Category</label>
+                <select id="membershipCategory" name="membershipCategory" onchange="handleCategoryChange(this.value)" required>
+                    <option value="basic">Basic Membership</option>
+                    <option value="premium">Premium Membership</option>
+                </select>
+            </div>
+            <div class="registration-payment-option" id="paymentOption">
+                <p id="paymentMessage">You need to pay for Premium Membership. Click the image to proceed with the payment.</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoTm-hwpe0P2YBAi9xbm67XXayndJcaErJEw&s" alt="Payment" onclick="alert('Proceed to payment')">
+            </div>
+            <div class="registration-form-group">
+                <label for="signature">Upload Signature</label>
+                <input type="file" id="signature" name="signature" required>
+            </div>
+            <div class="registration-form-group registration-agreement">
+                <input type="checkbox" id="agreement" name="agreement" onchange="handleAgreementChange(this)">
+                <label for="agreement">
+                    I confirm the <a onclick="showAgreementPopup()"><strong>Agreement</strong></a>
+                </label>
+            </div>
+            <div class="registration-form-group">
+                <button type="submit" id="submitBtn" class="registration-submit-btn" disabled>Submit (Subscribe)</button>
+            </div>
         </form>
+
+            <!-- Popup for Agreement -->
+    <div id="popupOverlay" class="registration-popup-overlay" onclick="closeAgreementPopup()"></div>
+    <div id="agreementPopup" class="registration-popup">
+        <h3>Student Committee Agreement</h3>
+        <p>
+            By joining the student committee membership, you agree to abide by the rules and 
+            regulations set forth by the committee, which includes active participation in meetings, 
+            adherence to the code of conduct, timely payment of any dues, attendance and contribution 
+            to committee-organized events, regular communication and responsiveness, and a commitment
+            to volunteer for various roles and responsibilities within the committee, understanding 
+            that failure to comply may result in the termination of your membership.
+        </p>
+        <button onclick="closeAgreementPopup()">Close</button>
+    </div>
 
         <h2>Testimonials</h2>
         <div class="testimonials">
             <div class="testimonial">
-                <p>"Joining this organization has been the best decision of my university life. The events and workshops are top-notch!" - <strong>Kareena Bhusal</strong></p>
+                <p>"Joining this Committee has been the best decision of my university life. The events and workshops are top-notch!" - <strong>Ser Bahadur Deuba</strong></p>
             </div>
             <div class="testimonial">
-                <p>"I have learned so much and met so many great people through this organization. Highly recommend!" - <strong>Avinash Kumar Chaudhary</strong></p>
+                <p>"I have learned so much and met so many great people through this Committee. Highly recommend!" - <strong>kp oli</strong></p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="social-media">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h3>About Us</h3>
+          <p>
+            Our student Committee aims to bring together like-minded
+            individuals who are passionate about learning, growing, and making
+            a difference. We offer a range of activities, resources, and
+            events designed to help you achieve your goals.
+          </p>
+          <div class="footer-social-icons">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
-        <p>&copy; 2024 Student Organization. All rights reserved.</p>
-    </footer>
+        <div class="footer-section quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#Latest-News">News</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="resources.html">Resources</a></li>          </ul>
+        </div>
+        <div class="footer-section contact-info">
+          <h3>Contact Information</h3>
+          <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+          <p><i class="fas fa-envelope"></i> info@studentCommittee.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Maitedevi, Kathmandu</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Student Committee. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <script src="js/scripts.js"></script>
+    <!-- Chatbot Container -->
+    <div id="chatbot" class="chatbot">
+        <div id="chatbot-header" class="chatbot-header">
+            Chatbot
+            <button id="close-chatbot" class="close-button">&times;</button>
+        </div>
+        <div id="chatbot-body" class="chatbot-body">
+            <div id="chatbot-messages" class="chatbot-messages"></div>
+        </div>
+        <div id="chatbot-footer" class="chatbot-footer">
+            <input type="text" id="chatbot-input" class="chatbot-input" placeholder="Type your message...">
+            <button id="chatbot-send" class="chatbot-send">Send</button>
+        </div>
+    </div>
+    
+
+    <!-- Chatbot Toggle Button -->
+    <button id="chatbot-toggle" class="chatbot-toggle">
+        <img src="Assets/images/chat-icon.png" alt="Chat Icon" class="chatbot-icon">
+        <span>Chat with us</span>
+    </button>
+    <script src="./js/script.js"></script>
+    <script src="./js/chatbot.js"></script>
+
+
+    <script data-cfasync="false" src="./js/email-decode.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/jquery.meanmenu.js"></script>
+
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <script src="./js/carousel-thumbs.min.js"></script>
+
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+
+    <script src="./js/aos.js"></script>
+
+    <script src="./js/odometer.min.js"></script>
+
+    <script src="./js/appear.min.js"></script>
+
+    <script src="./js/form-validator.min.js"></script>
+
+    <script src="./js/contact-form-script.js"></script>
+
+    <script src="./js/ajaxchimp.min.js"></script>
+
+    <script src="./js/custom.js"></script>
 </body>
 </html>

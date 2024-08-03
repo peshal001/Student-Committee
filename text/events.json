@@ -1,0 +1,49 @@
+[
+  {
+    "title": "AI & Machine Learning Seminar",
+    "date": "May 5, 2024",
+    "description": "A successful seminar where experts discussed the latest trends in AI and machine learning."
+  },
+  {
+    "title": "Web Development Workshop",
+    "date": "June 15, 2024",
+    "description": "Join us for a comprehensive workshop on web development. Learn HTML, CSS, and JavaScript from experienced instructors.",
+    "type": "upcoming"
+  },
+  {
+    "title": "Annual Sports Meet",
+    "date": "July 10, 2024",
+    "description": "Participate in our annual sports meet. Events include football, basketball, swimming, and more. Open to all members.",
+    "type": "past"
+  },
+  {
+    "title": "Cultural Festival",
+    "date": "August 20, 2024",
+    "description": "Celebrate diverse cultures with music, dance, food, and art. Everyone is welcome!",
+    "type": "past"
+  },
+  {
+    "title": "Community Service Day",
+    "date": "April 22, 2024",
+    "description": "Members participated in various community service activities, making a positive impact in the local area.",
+    "type": "past"
+  },
+  {
+    "title": "Leadership Summit",
+    "date": "March 30, 2024",
+    "description": "An event focused on developing leadership skills among students through workshops and keynote speeches.",
+    "type": "past"
+  },
+  {
+    "title": "Tech Innovation Expo",
+    "date": "September 25, 2024",
+    "description": "Showcase of the latest technological innovations and projects by students and tech enthusiasts.",
+    "type": "upcoming"
+  },
+  {
+    "title": "Health and Wellness Fair",
+    "date": "November 18, 2024",
+    "description": "A fair promoting health and wellness through various activities, talks, and demonstrations.",
+    "type": "upcoming"
+  }
+]

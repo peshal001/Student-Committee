@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Menu</title>
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <div class="container">
+        <h1>College Cafeteria Menu</h1>
+        <div class="menu-controls">
+            <button onclick="filterMenu('all')">All</button>
+            <button onclick="filterMenu('veg')">Vegetarian</button>
+            <button onclick="filterMenu('nonveg')">Non-Vegetarian</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>S.N</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="menu-table">
+                <!-- Menu items will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/canteen.js"></script>
+</body>
+</html>

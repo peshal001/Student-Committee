@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visitor Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script defer src="./js/auth.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/remixicon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/user_create.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="preloader-area">
+      <div class="spinner">
+        <div class="inner">
+          <div class="disc"></div>
+          <div class="disc"></div>
+          <div class="disc"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-header-area">
+      <div class="container-fluid">
+        <div class="row align-items-center"></div>
+      </div>
+    </div>
+
+    <div class="navbar-area nav-bg-2">
+      <div class="mobile-responsive-nav">
+        <div class="container">
+          <div class="mobile-responsive-menu">
+            <div class="logo">
+              <a href="index.html">
+                <img src="./Assets/images/logo.png" class="main-logo" lt="logo" />
+                <img src="./Assets/images/logo.png" class="white-logo" alt="logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-nav">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="#">
+              <img src="./Assets/images/logo.png" class="main-logo" alt="logo" />
+              <img src="./Assets/images/logo.png" class="white-logo" alt="logo" />
+            </a>
+            <div
+              class="collapse navbar-collapse mean-menu"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link active"> Home </a>
+                </li>
+                <li class="nav-item">
+                  <a href="about.html" class="nav-link dropdown-toggle">
+                    About Us
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a href="faq.html" class="nav-link">FAQ</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="forums.html" class="nav-link dropdown-toggle">
+                    Forums
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a href="membership.html" class="nav-link">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                          <a href="registation.html" class="nav-link"
+                            >Registration</a
+                          >
+                        </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="blog.html" class="nav-link"> Blog </a>
+                </li>
+                <li class="nav-item">
+                  <a href="events.html" class="nav-link dropdown-toggle">
+                    Events
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a href="events.html" class="nav-link">Upcoming Events</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="events.html" class="nav-link">Past Events</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link">Contact Us</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">Logout</a>
+                </li>
+              </ul>
+              <div class="others-options">
+                <div class="icon">
+                  <i
+                    class="ri-menu-3-fill"
+                    data-bs-toggle="modal"
+                    data-bs-target="#sidebarModal"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="others-option-for-responsive">
+        <div class="container">
+          <div class="dot-menu">
+            <div class="inner">
+              <div class="icon">
+                <i
+                  class="ri-menu-3-fill"
+                  data-bs-toggle="modal"
+                  data-bs-target="#sidebarModal"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container animate__animated animate__fadeIn">
+      <section id="visitors-section">
+        <h2>Welcome Visitors!</h2>
+        <p>
+          We are delighted to have you visit our student committee page. Here,
+          you'll find information about our mission, upcoming events, and how
+          you can get involved. Our committee is dedicated to enhancing the
+          student experience through various initiatives and programs.
+        </p>
+
+        <div id="mission">
+          <h3>Our Mission</h3>
+          <p>
+            Our mission is to foster a supportive and inclusive community where
+            students can thrive academically, socially, and personally. We aim
+            to provide resources, organize events, and advocate for student
+            needs to ensure a fulfilling campus experience for all.
+          </p>
+        </div>
+
+        <div id="events">
+          <h3>Upcoming Events</h3>
+          <ul>
+            <li>
+              <strong>Welcome Back Bash:</strong> September 10, 2024, at 5:00 PM
+              in the Student Union
+            </li>
+            <li>
+              <strong>Career Fair:</strong> October 15, 2024, at 10:00 AM in the
+              Main Auditorium
+            </li>
+            <li>
+              <strong>Charity Run:</strong> November 20, 2024, at 8:00 AM in the
+              Campus Grounds
+            </li>
+          </ul>
+          <p>
+            Stay tuned for more events and make sure to mark your calendars! We
+            encourage all students to participate and make the most of these
+            opportunities.
+          </p>
+        </div>
+
+        <div id="involvement">
+          <h3>How to Get Involved</h3>
+          <p>
+            Getting involved with the student committee is easy and rewarding.
+            Here are some ways you can contribute:
+          </p>
+          <ul>
+            <li>
+              Join one of our many sub-committees based on your interests.
+            </li>
+            <li>Attend our regular meetings and share your ideas.</li>
+            <li>Volunteer at events and help with organizing activities.</li>
+            <li>
+              Follow us on social media for the latest updates and
+              opportunities.
+            </li>
+          </ul>
+          <p>
+            If you have any questions or want to learn more, feel free to reach
+            out to us at
+            <a href="mailto:studentcommittee@example.com"
+              >studentcommittee@example.com</a
+            >.
+          </p>
+        </div>
+
+        <a href="#more-info" class="button">Learn More</a>
+      </section>
+    </div>
+    <div
+      class="sidebarModal modal right fade"
+      id="sidebarModal"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-bs-dismiss="modal">
+            <i class="ri-close-line"></i>
+          </button>
+          <div class="modal-body">
+            <a href="index.html">
+              <img src="./Assets/images/logo.png" class="main-logo" alt="logo" />
+              <img src="images/white-logo.png" class="white-logo" alt="logo" />
+            </a>
+            <div class="sidebar-content">
+              <h3>About Us</h3>
+              <p>
+                Our student Committee aims to bring together like-minded
+                individuals who are passionate about learning, growing, and
+                making a difference. We offer a range of activities, resources,
+                and events designed to help you achieve your goals.
+              </p>
+              <div class="sidebar-btn">
+                <a href="contact.html" class="default-btn">Let's Talk</a>
+              </div>
+            </div>
+            <div class="sidebar-contact-info">
+              <h3>Contact Information</h3>
+              <ul class="info-list">
+                <li>
+                  <i class="ri-phone-fill"></i>
+                  <a href="tel:(123)456-789">(123)456-789</a>
+                </li>
+                <li>
+                  <i class="ri-mail-line"></i
+                  ><a href="#"
+                    ><span class="__cf_email__" data-cfemail=""
+                      >info@studentCommittee.com</span
+                    ></a
+                  >
+                </li>
+                <li><i class="ri-map-pin-line"></i>Maitedevi,Kathmandu</li>
+              </ul>
+            </div>
+            <ul class="sidebar-social-list">
+              <li>
+                <a href="https://www.facebook.com" target="_blank"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/?lang=en" target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://instagram.com/?lang=en" target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+            <div class="contact-form">
+              <h3>Ready to Get Started?</h3>
+              <form id="contactForm">
+                <div class="row">
+                  <div class="col-lg-12 col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        required=""
+                        data-error="Please enter your name"
+                        placeholder="Your name"
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        required=""
+                        data-error="Please enter your email"
+                        placeholder="Your email address"
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="phone_number"
+                        class="form-control"
+                        required=""
+                        data-error="Please enter your phone number"
+                        placeholder="Your phone number"
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12">
+                    <div class="form-group">
+                      <textarea
+                        name="message"
+                        class="form-control"
+                        cols="30"
+                        rows="6"
+                        required=""
+                        data-error="Please enter your message"
+                        placeholder="Write your message..."
+                      ></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12">
+                    <button type="submit" class="default-btn">
+                      Send Message<span></span>
+                    </button>
+                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h3>About Us</h3>
+          <p>
+            Our student Committee aims to bring together like-minded
+            individuals who are passionate about learning, growing, and making
+            a difference. We offer a range of activities, resources, and
+            events designed to help you achieve your goals.
+          </p>
+          <div class="footer-social-icons">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-section quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#Latest-News">News</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="resources.html">Resources</a></li>          </ul>
+        </div>
+        <div class="footer-section contact-info">
+          <h3>Contact Information</h3>
+          <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+          <p><i class="fas fa-envelope"></i> info@studentCommittee.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Maitedevi, Kathmandu</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Student Committee. All rights reserved.</p>
+    </div>
+  </footer>
+
+    <!-- Chatbot Container -->
+    <div id="chatbot" class="chatbot">
+        <div id="chatbot-header" class="chatbot-header">
+            Chatbot
+            <button id="close-chatbot" class="close-button">&times;</button>
+        </div>
+        <div id="chatbot-body" class="chatbot-body">
+            <div id="chatbot-messages" class="chatbot-messages"></div>
+        </div>
+        <div id="chatbot-footer" class="chatbot-footer">
+            <input type="text" id="chatbot-input" class="chatbot-input" placeholder="Type your message...">
+            <button id="chatbot-send" class="chatbot-send">Send</button>
+        </div>
+    </div>
+    
+
+    <!-- Chatbot Toggle Button -->
+    <button id="chatbot-toggle" class="chatbot-toggle">
+        <img src="Assets/images/chat-icon.png" alt="Chat Icon" class="chatbot-icon">
+        <span>Chat with us</span>
+    </button>
+    <script src="./js/script.js"></script>
+    <script src="./js/chatbot.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+
+    <script data-cfasync="false" src="./js/email-decode.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/jquery.meanmenu.js"></script>
+
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <script src="./js/carousel-thumbs.min.js"></script>
+
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+
+    <script src="./js/aos.js"></script>
+
+    <script src="./js/odometer.min.js"></script>
+
+    <script src="./js/appear.min.js"></script>
+
+    <script src="./js/form-validator.min.js"></script>
+
+    <script src="./js/contact-form-script.js"></script>
+
+    <script src="./js/ajaxchimp.min.js"></script>
+
+    <script src="./js/custom.js"></script>
+  </body>
+</html>
