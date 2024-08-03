@@ -92,15 +92,15 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="forums.html" class="nav-link dropdown-toggle">
-                                    Forums
+                                <a href="#" class="nav-link dropdown-toggle">
+                                    Membership
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link">Membership</a>
+                                        <a href="registation.html" class="nav-link">Registstion</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="registation.html" class="nav-link">Registration</a>
+                                        <a href="calender.html" class="nav-link">Events Calender</a>
                                     </li>
                                 </ul>
                             </li>
@@ -256,61 +256,72 @@
             <li>Opportunities to develop leadership and Committeeal skills</li>
         </ul>
 
-        <h2>Membership Form</h2>
-        <form onsubmit="return validateForm(event)">
-            <div class="registration-form-group">
-                <label for="fullName">Full Name</label>
-                <input type="text" id="fullName" name="fullName" required>
-            </div>
-            <div class="registration-form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="registration-form-group">
-                <label for="address">Address</label>
-                <input type="text" id="address" name="address" required>
-            </div>
-            <div class="registration-form-group">
-                <label for="contact">Contact</label>
-                <div style="display: flex;">
-                    <span class="contact-prefix">+977</span>
-                    <input type="text" id="contact" name="contact" maxlength="10" required class="contact-input">
+        <div class="registration-container">
+            <h2>Membership Form</h2>
+            <form onsubmit="return validateForm(event)">
+                <div class="registration-form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
                 </div>
-            </div>
-            <div class="registration-form-group">
-                <label for="membership-duration">Membership Duration</label>
-                <select id="membership-duration" name="membership-duration" required>
-                    <option value="">Select duration</option>
-                    <option value="1">1 Year</option>
-                    <option value="2">2 Years</option>
-                    <option value="3">3 Years</option>
-                </select>
-            </div>
-            <div class="registration-form-group">
-                <label for="membershipCategory">Membership Category</label>
-                <select id="membershipCategory" name="membershipCategory" onchange="handleCategoryChange(this.value)" required>
-                    <option value="basic">Basic Membership</option>
-                    <option value="premium">Premium Membership</option>
-                </select>
-            </div>
-            <div class="registration-payment-option" id="paymentOption">
-                <p id="paymentMessage">You need to pay for Premium Membership. Click the image to proceed with the payment.</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoTm-hwpe0P2YBAi9xbm67XXayndJcaErJEw&s" alt="Payment" onclick="alert('Proceed to payment')">
-            </div>
-            <div class="registration-form-group">
-                <label for="signature">Upload Signature</label>
-                <input type="file" id="signature" name="signature" required>
-            </div>
-            <div class="registration-form-group registration-agreement">
-                <input type="checkbox" id="agreement" name="agreement" onchange="handleAgreementChange(this)">
-                <label for="agreement">
-                    I confirm the <a onclick="showAgreementPopup()"><strong>Agreement</strong></a>
-                </label>
-            </div>
-            <div class="registration-form-group">
-                <button type="submit" id="submitBtn" class="registration-submit-btn" disabled>Submit (Subscribe)</button>
-            </div>
-        </form>
+                <div class="registration-form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="registration-form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="registration-form-group">
+                    <label for="contact">Contact</label>
+                    <div style="display: flex;">
+                        <span class="contact-prefix">+977</span>
+                        <input type="text" id="contact" name="contact" maxlength="10" required class="contact-input">
+                    </div>
+                </div>
+                <div class="registration-form-group">
+                    <label for="studentId">Student ID</label>
+                    <input type="text" id="studentId" name="studentId" required>
+                </div>
+                <div class="registration-form-group">
+                    <label for="facultyStatus">Faculty Status / Program</label>
+                    <input type="text" id="facultyStatus" name="facultyStatus" required>
+                </div>
+
+                <div class="registration-form-group">
+                    <label for="membership-duration">Membership Duration</label>
+                    <select id="membership-duration" name="membership-duration" required>
+                        <option value="">Select duration</option>
+                        <option value="1">1 Year</option>
+                        <option value="2">2 Years</option>
+                        <option value="3">3 Years</option>
+                    </select>
+                </div>
+                <div class="registration-form-group">
+                    <label for="membershipCategory">Subscription</label>
+                    <select id="membershipCategory" name="membershipCategory" onchange="handleCategoryChange(this.value)" required>
+                        <option value="basic">Basic subscription</option>
+                        <option value="premium">Premium subscription</option>
+                    </select>
+                </div>
+                <div class="registration-payment-option" id="paymentOption">
+                    <p id="paymentMessage">You need to pay for Premium subscription. Click the image to proceed with the payment.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoTm-hwpe0P2YBAi9xbm67XXayndJcaErJEw&s" alt="Payment" onclick="alert('Proceed to payment')">
+                </div>
+                <div class="registration-form-group">
+                    <label for="signature">Upload Signature</label>
+                    <input type="file" id="signature" name="signature" required>
+                </div>
+                <div class="registration-form-group registration-agreement">
+                    <input type="checkbox" id="agreement" name="agreement" onchange="handleAgreementChange(this)">
+                    <label for="agreement">
+                        I confirm the <a onclick="showAgreementPopup()"><strong>Agreement</strong></a>
+                    </label>
+                </div>
+                <div class="registration-form-group">
+                    <button type="submit" id="submitBtn" class="registration-submit-btn" disabled>Submit (Subscribe)</button>
+                </div>
+            </form>
+        </div>
 
             <!-- Popup for Agreement -->
     <div id="popupOverlay" class="registration-popup-overlay" onclick="closeAgreementPopup()"></div>
@@ -364,7 +375,8 @@
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="#Latest-News">News</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="menu-canteen.html">Cafeteria Menu</a></li>
             <li><a href="resources.html">Resources</a></li>          </ul>
         </div>
         <div class="footer-section contact-info">

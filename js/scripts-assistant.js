@@ -153,6 +153,9 @@ function takeCommand(message) {
     } else if (message.includes("forms")) {
         window.open("forms.html", "_blank");
         speak("Opening the form page...");
+    } else if (message.includes("Calender")) {
+        window.open("calender.html", "_blank");
+        speak("Opening the calender page...");
     } else if (message.includes("registration")) {
         window.open("registration.html", "_blank");
         speak("Opening the registration page...");
