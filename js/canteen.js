@@ -1,14 +1,14 @@
 const menuItems = [
-    { sNo: 1, name: "Veggie Burger", type: "veg", description: "A delicious vegetarian burger made with fresh veggies.", price: "$5.99", image: "veggie_burger.jpg" },
-    { sNo: 2, name: "Chicken Sandwich", type: "nonveg", description: "Grilled chicken sandwich with lettuce and tomato.", price: "$6.99", image: "chicken_sandwich.jpg" },
-    { sNo: 3, name: "Grilled Cheese", type: "veg", description: "Classic grilled cheese sandwich with melted cheese.", price: "$4.99", image: "grilled_cheese.jpg" },
-    { sNo: 4, name: "Beef Taco", type: "nonveg", description: "Spicy beef taco with salsa and cheese.", price: "$3.99", image: "beef_taco.jpg" },
-    { sNo: 5, name: "Caesar Salad", type: "veg", description: "Crisp Caesar salad with croutons and parmesan.", price: "$5.49", image: "caesar_salad.jpg" },
-    { sNo: 6, name: "Fish and Chips", type: "nonveg", description: "Crispy fish with a side of golden fries.", price: "$7.99", image: "fish_chips.jpg" },
-    { sNo: 7, name: "Mushroom Risotto", type: "veg", description: "Creamy risotto with sautéed mushrooms.", price: "$8.99", image: "mushroom_risotto.jpg" },
-    { sNo: 8, name: "BBQ Ribs", type: "nonveg", description: "Tender ribs with a smoky BBQ sauce.", price: "$9.99", image: "bbq_ribs.jpg" },
-    { sNo: 9, name: "Paneer Tikka", type: "veg", description: "Spicy grilled paneer with a side of chutney.", price: "$7.49", image: "paneer_tikka.jpg" },
-    { sNo: 10, name: "Shrimp Pasta", type: "nonveg", description: "Pasta with a rich shrimp and garlic sauce.", price: "$10.99", image: "shrimp_pasta.jpg" }
+    { sNo: 1, name: "Veggie Burger", type: "veg", description: "A delicious vegetarian burger made with fresh veggies.", price: "रु5.99", image: "Assets/images/menu/1.jpg" },
+    { sNo: 2, name: "Chicken Sandwich", type: "nonveg", description: "Grilled chicken sandwich with lettuce and tomato.", price: "रु6.99", image: "Assets/images/menu/2.jpg" },
+    { sNo: 3, name: "Grilled Cheese", type: "veg", description: "Classic grilled cheese sandwich with melted cheese.", price: "रु4.99", image: "Assets/images/menu/3.jpg" },
+    { sNo: 4, name: "Beef Taco", type: "nonveg", description: "Spicy beef taco with salsa and cheese.", price: "रु3.99", image: "Assets/images/menu/4.jpg" },
+    { sNo: 5, name: "Caesar Salad", type: "veg", description: "Crisp Caesar salad with croutons and parmesan.", price: "रु5.49", image: "Assets/images/menu/5.jpg" },
+    { sNo: 6, name: "Fish and Chips", type: "nonveg", description: "Crispy fish with a side of golden fries.", price: "रु7.99", image: "Assets/images/menu/6.jpg" },
+    { sNo: 7, name: "Mushroom Risotto", type: "veg", description: "Creamy risotto with sautéed mushrooms.", price: "रु8.99", image: "Assets/images/menu/7.jpg" },
+    { sNo: 8, name: "BBQ Ribs", type: "nonveg", description: "Tender ribs with a smoky BBQ sauce.", price: "रु9.99", image: "Assets/images/menu/8.jpg" },
+    { sNo: 9, name: "Paneer Tikka", type: "veg", description: "Spicy grilled paneer with a side of chutney.", price: "रु7.49", image: "Assets/images/menu/9.jpg" },
+    { sNo: 10, name: "Shrimp Pasta", type: "nonveg", description: "Pasta with a rich shrimp and garlic sauce.", price: "$10.99", image: "Assets/images/menu/10.jpg" }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {

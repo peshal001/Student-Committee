@@ -25,7 +25,7 @@ function wishMe() {
 }
 
 window.addEventListener('load', () => {
-    speak("Initializing Your Assistant...");
+    speak("Namaste i am  fulkumar. How can i assist you today...");
     wishMe();
 });
 

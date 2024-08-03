@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Membership Registration</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="./js/script.js" defer></script>
+    <!-- Link to your CSS file -->
+    <script src="js/script.js" defer></script>
+    <!-- Link to your JS file -->
 </head>
 <body>
     <div class="registration-container">
@@ -26,23 +28,10 @@
         </form>
     </div>
 
-    <!-- Popup for Agreement -->
-    <div id="popupOverlay" class="registration-popup-overlay" onclick="closeAgreementPopup()"></div>
-    <div id="agreementPopup" class="registration-popup">
-        <h3>Student Committee Agreement</h3>
-        <p>
-            This is the student committee agreement. By joining the membership, you
-            agree to abide by the rules and regulations set forth by the committee.
-            This includes but is not limited to active participation in meetings,
-            adherence to the code of conduct, and timely payment of any dues
-            associated with the membership.
-        </p>
-        <button onclick="closeAgreementPopup()">Close</button>
-    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-./js/3.1.9-1/crypto-js.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-./js/3.1.9-1/hmac-sha256.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-./js/3.1.9-1/enc-base64.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/hmac-sha256.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/enc-base64.min.js"></script>
     <script>
         var transactionId = Math.floor(Math.random() * 1000);
         var totalAmt = document.getElementById("total_amount").value;
