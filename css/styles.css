@@ -2201,4 +2201,7 @@ body {
   .faq-wrapper {
       flex-direction: column;
   }
+  .iq-features{
+    display: none;
+  }
 }
