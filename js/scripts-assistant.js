@@ -25,7 +25,7 @@ function wishMe() {
 }
 
 window.addEventListener('load', () => {
-    speak("Namaste i am  fulkumar. How can i assist you today...");
+    speak("Namaste i am  fulkumar. Your assistant, made by developers of student committee...");
     wishMe();
 });
 
@@ -159,6 +159,10 @@ function takeCommand(message) {
     } else if (message.includes("registration")) {
         window.open("registration.html", "_blank");
         speak("Opening the registration page...");
+    } else if (message.includes("thank")) {
+        speak("Thank you all for your attention and for taking the time to learn about our project...");
+    } else if (message.includes("welcome")) {
+        speak("Namaste! Welcome to our website. We're delighted to have you here. Feel free to explore our site....");
     } else if (message.includes("student login")) {
         window.open("login-student.html", "_blank");
         speak("Opening the student login page...");
