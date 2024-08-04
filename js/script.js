@@ -1,3 +1,29 @@
+document.addEventListener('DOMContentLoaded', function() {
+    var popup = document.getElementById('popup');
+    var closeBtn = document.getElementById('closeBtn');
+
+    // Check if popup has been shown in this session
+    if (!sessionStorage.getItem('popupShown')) {
+        // Show the popup
+        popup.style.display = 'block';
+
+        // Set the popupShown flag in session storage
+        sessionStorage.setItem('popupShown', 'true');
+    }
+
+    // When the user clicks on <span> (x), close the popup
+    closeBtn.onclick = function() {
+        popup.style.display = 'none';
+    }
+
+    // When the user clicks anywhere outside of the popup, close it
+    window.onclick = function(event) {
+        if (event.target == popup) {
+            popup.style.display = 'none';
+        }
+    }
+});
+
 // JavaScript to handle carousel slide movement
 let slideIndex = 0;
 let autoScrollTimeout;
